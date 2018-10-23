@@ -1,0 +1,27 @@
+{
+  "name": "actionsequence",
+  "version": "1.0.0",
+  "description": "Process an array of promises in order",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camdagr8/ActionSequence.git"
+  },
+  "keywords": [
+    "promise",
+    "sequence"
+  ],
+  "author": "Cam Tullos <cam@tullos.ninja>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/camdagr8/ActionSequence/issues"
+  },
+  "homepage": "https://github.com/camdagr8/ActionSequence#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
