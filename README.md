@@ -1,10 +1,11 @@
 # ActionSequence
 
-Having Promise.all() is great, but some times you just want to run through a list of Promises in order. 
+Having Promise.all() is great, but some times you just want to run through a list of Promises in order.
 
 # Usage
 
 ```javascript
+const ActionSequence = require('action-sequence');
 
 const options = { delay: 500 };
 const actions = {

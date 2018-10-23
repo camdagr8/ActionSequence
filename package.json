@@ -1,6 +1,6 @@
 {
-  "name": "ActionSequence",
-  "version": "1.0.0",
+  "name": "action-sequence",
+  "version": "1.0.1",
   "description": "Process an array of promises in order",
   "main": "index.js",
   "scripts": {
