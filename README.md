@@ -12,10 +12,10 @@ const actions = {
   action1: ({ action, delay }) => new Promise(resolve => {    
     setTimeout(() => { resolve(1) }, delay);
   }),
-  action2: ({ action, options }) => new Promise(resolve => {    
+  action2: ({ action, delay }) => new Promise(resolve => {    
     setTimeout(() => { resolve(2) }, delay);
   }),
-  action3: ({ action, options }) => new Promise(resolve => {    
+  action3: ({ action, delay }) => new Promise(resolve => {    
     setTimeout(() => { resolve(3) }, delay);
   }),
 };
@@ -28,3 +28,9 @@ ActionSequence({ actions, options }).then(
 );
 
 ```
+
+> *Pro tip:* Since `ActionSequence` returns a `Promise`, it's possible to process multiple `ActionSequence` promises in another `ActionSequence`.
+
+# Parameters
+**actions** `{Object}` that contains `Functions` that return a `Promise`.
+**options** `{Object}` that passes parameters to each action `Function`.
