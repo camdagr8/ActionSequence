@@ -33,4 +33,5 @@ ActionSequence({ actions, options }).then(
 
 # Parameters
 **actions** `{Object}` that contains `Functions` that return a `Promise`.
+
 **options** `{Object}` that passes parameters to each action `Function`.
