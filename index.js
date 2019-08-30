@@ -16,6 +16,7 @@ module.exports = ({
                 success.push(result);
             }).catch(error => {
                 errors.push(error);
+                break;
             });
         }
 
