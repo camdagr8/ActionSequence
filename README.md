@@ -1,6 +1,6 @@
 # ActionSequence
 
-Having Promise.all() is great, but some times you just want to run through a list of Promises or function in fixed order.
+Having `Promise.all()` is great, but some times you just want to run through a list of Promises or functions in fixed order.
 
 > ActionSequence works in both Node and browser environments.
 
@@ -55,4 +55,4 @@ ActionSequence({ actions, options })
 
 **options** `{Object}` Parameters passed to each action `Function`.
 
-**context** `{Object}` If an action returns a value, it will be added to the context object making it possible to use the output of a previous action in the current action. If an does not return a value `true` will be set at the context value for that action.
+**context** `{Object}` If an action returns a value, it will be added to the context object making it possible to use the output of a previous action in the current action. If an action does not return a value, `true` will be set at the context value for that action.
