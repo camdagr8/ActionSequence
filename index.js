@@ -2,7 +2,7 @@ module.exports = ({ actions = {}, options = {}, context = {} }) => {
   const errors = {};
 
   return new Promise(async (resolve, reject) => {
-      let prevAction;
+    let prevAction;
     for (action in actions) {
       try {
         let result = await actions[action]({
