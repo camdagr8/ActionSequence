@@ -16,6 +16,7 @@ module.exports = ({ actions = {}, options = {}, context = {} }) => {
         context[action] = result;
       } catch (error) {
         errors[action] = error;
+        break;
       }
 
       prevAction = action;
